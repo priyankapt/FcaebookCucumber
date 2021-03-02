@@ -1,0 +1,154 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "      User navigate to facebook",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3371000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on facebook login page",
+            "match": {
+              "location": "com.quinbay.cucumber.steps.LoginSteps.iAmOnFacebookLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-02T06:14:29.962Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4623000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.quinbay.cucumber.CucumberHooks.testBefore()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify login fails with incorrect credentials",
+        "description": "",
+        "id": "loginfeature;verify-login-fails-with-incorrect-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.quinbay.cucumber.CucumberHooks.testAfter()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter username as \"8610051663\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8610051663\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.quinbay.cucumber.steps.LoginSteps.iEnterUsernameAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter password as \"aaaaaaa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aaaaaaa\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.quinbay.cucumber.steps.LoginSteps.iEnterPasswordAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//div[@class\u003d\u0027pam _3-95 _9ay3 uiBoxRed\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Priyankas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:4c9:e26b:9be8:4904%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: driver.version: RemoteWebDriver\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.quinbay.cucumber.steps.LoginSteps.loginShouldFail(LoginSteps.java:49)\n\tat ✽.Login should fail(file:///Users/priyanka/Downloads/CucumberTraining/src/test/resources/features/Login.feature:16)\n",
+              "duration": 16674000000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "Login should fail",
+            "match": {
+              "location": "com.quinbay.cucumber.steps.LoginSteps.loginShouldFail()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "This is a test",
+            "match": {
+              "location": "com.quinbay.cucumber.steps.LoginSteps.thisIsATest()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@Test1"
+          }
+        ]
+      }
+    ],
+    "name": "LoginFeature",
+    "description": "",
+    "id": "loginfeature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 15
+        }
+      }
+    ]
+  }
+]
